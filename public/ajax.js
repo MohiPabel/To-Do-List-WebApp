@@ -14,12 +14,12 @@ $('#new-todo-form').submit(function(e) {
 						<label for="${data._id}">Item Text</label>
 						<input type="text" value="${data.text}" name="todo[text]" class="form-control" id="${data._id}">
 					</div>
-					<button class="btn btn-primary">Update Item</button>
+					<button class="btn btn-primary mt-2">Update Item</button>
 				</form>
 				<span class="lead">
 					${data.text}
 				</span>
-				<div class="pull-right">
+				<div class="float-end">
 					<button class="btn btn-sm btn-warning edit-button">Edit</button>
 					<form style="display: inline" method="POST" action="/todos/${data._id}" class="delete-item-form">
 						<button type="submit" class="btn btn-sm btn-danger">Delete</button>
@@ -57,12 +57,12 @@ $('#todo-list').on('submit', '.edit-item-form', function(e) {
 						<label for="${data._id}">Item Text</label>
 						<input type="text" value="${data.text}" name="todo[text]" class="form-control" id="${data._id}">
 					</div>
-					<button class="btn btn-primary">Update Item</button>
+					<button class="btn btn-primary mt-2">Update Item</button>
 				</form>
 				<span class="lead">
 					${data.text}
 				</span>
-				<div class="pull-right">
+				<div class="float-end">
 					<button class="btn btn-sm btn-warning edit-button">Edit</button>
 					<form style="display: inline" method="POST" action="/todos/${data._id}" class="delete-item-form">
 						<button type="submit" class="btn btn-sm btn-danger">Delete</button>
